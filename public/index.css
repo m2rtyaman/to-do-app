@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cikisyapButton{
+    scale: 70%;
+    float: right;
+    transition: 200ms linear all;
+    box-shadow: 5px 5px 10px black;
+}
+.cikisyapButton:hover{
+background-color: red;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #2c2c2c;
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://cdn.discordapp.com/attachments/1216342621295742976/1227302272715718798/night_hill_1920x1080.jpg?ex=6627e94f&is=6615744f&hm=9a68834a0f99fdd23747ead91f36ddb6c7b1e9d2bd849573ceda27255fc4034c&");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #2db0c7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://cdn.discordapp.com/attachments/1216342621295742976/1227052934798377081/unchecked.png?ex=66270119&is=66148c19&hm=dd8dcbbfe316989418f8a7ccb63a9b7a359cba38a6a1e55286d93e48cf65a26a&);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://cdn.discordapp.com/attachments/1216342621295742976/1227052934110515340/checked.png?ex=66270119&is=66148c19&hm=6fc0a5adc44097f57c9cb5c32f486ff049ca21983230166e505bec6470553d9e&);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/581/271/non_2x/trash-can-icon-garbage-bin-with-lid-delete-symbol-illustration-free-vector.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}

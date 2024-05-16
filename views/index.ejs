@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../emailPopup.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="/logout">
+            <button class="cikisyapButton">
+                Çıkış yap <i class="fa-solid fa-right-from-bracket"></i>
+            </button></a>
+        <div class="todo-app">
+
+            <h2>To-Do List <img
+                    src="https://cdn.discordapp.com/attachments/1216342621295742976/1227052934488133712/icon.png?ex=66270119&is=66148c19&hm=9d39d882bb9ab640606fe3d3c548f91e76e1fe32b3e8c98c6a7d653f236d45f7&"
+                    alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button id="addTaskButton">Add</button>
+            </div>
+            <ul id="list-container">
+                    <% listContent.forEach(todo => { %>
+                        <li><%= todo %>
+                            <span class="deleteButton"></span>
+                        </li>
+                    <% }); %>                
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+<script src="../script.js"></script>
+<script src="../views/index.html"></script>
+
+</html>
